@@ -1,0 +1,21 @@
+{
+    "name": "erickpatrick/webpack",
+    "description": "Module to add content to HEAD of templates",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "require": {
+        "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0",
+        "magento/framework": "101.0.*",
+        "erickpatrick/webpack-magento2": "~1.0.0"
+    },
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": {
+            "ErickPatrick\\Webpack\\": ""
+        }
+    }
+}

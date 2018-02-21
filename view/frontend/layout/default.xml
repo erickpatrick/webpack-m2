@@ -1,0 +1,58 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <!-- removes unnecessary CSS/JS -->
+        <remove src="mage/calendar.css" />
+        <remove src="css/styles-m.css" />
+        <remove src="css/styles-l.css" />
+        <remove src="requirejs/require.js" />
+        <remove src="requirejs-config.js" />
+        <remove src="mage/requirejs/mixins.js" />
+    </head>
+    <body>
+        <attribute name="class" value="rd8"/>
+
+        <referenceBlock name="absolute_footer" remove="true"/>
+        <referenceBlock name="bundle_cart_configure_head_components" remove="true"/>
+        <referenceBlock name="bundle_checkout_page_head_components" remove="true"/>
+        <referenceBlock name="captcha_page_head_components" remove="true"/>
+        <referenceBlock name="catalog_category_page_head_components" remove="true"/>
+        <referenceBlock name="checkout_page_head_components" remove="true"/>
+        <!-- may be needed later -->
+        <referenceBlock name="catalog.product.related" remove="true"/>
+        <referenceBlock name="product.info.upsell" remove="true"/>
+        <referenceBlock name="checkout.cart.crosssell" remove="true"/>
+        <!-- /may be needed later -->
+        <referenceBlock name="checkout_cart_configure_head_components" remove="true"/>
+        <referenceBlock name="configurableproduct_product_view_head_components" remove="true"/>
+        <referenceBlock name="cookie_notices" remove="true"/>
+        <referenceBlock name="customer_account_create_head_components" remove="true"/>
+        <referenceBlock name="customer_account_edit_head_components" remove="true"/>
+        <referenceBlock name="customer_address_head_components" remove="true"/>
+        <referenceBlock name="customer_page_head_components" remove="true"/>
+        <referenceBlock name="downloadable_page_head_components" remove="true"/>
+        <referenceBlock name="global_notices" remove="true"/>
+        <referenceBlock name="head.components" remove="true"/>
+        <referenceBlock name="html_calendar" remove="true"/>
+        <referenceBlock name="logger" remove="true" />
+        <referenceBlock name="multishipping_checkout_addresses_page_head_components" remove="true"/>
+        <referenceBlock name="multishipping_checkout_billing_page_head_components" remove="true"/>
+        <referenceBlock name="newsletter_head_components" remove="true"/>
+        <referenceBlock name="paypal_express_review_checkout_head_components" remove="true"/>
+        <referenceBlock name="paypal_express_review_head_components" remove="true"/>
+        <referenceBlock name="paypal_payflowexpress_review_checkout_head_components" remove="true"/>
+        <referenceBlock name="paypal_payflowexpress_review_head_components" remove="true"/>
+        <referenceBlock name="product.tooltip" remove="true"/>
+        <referenceBlock name="report.bugs" remove="true"/>
+        <referenceBlock name="reports_page_head_components" remove="true"/>
+        <referenceBlock name="require-cookie" remove="true"/>
+        <referenceBlock name="sales_page_head_components" remove="true"/>
+        <referenceBlock name="store.settings.language" remove="true"/>
+        <referenceBlock name="store_language" remove="true"/>
+        <referenceBlock name="store_switcher" remove="true"/>
+        <referenceBlock name="wishlist_head_components" remove="true"/>
+        <referenceBlock name="wishlist_page_head_components" remove="true"/>
+        <referenceBlock name="wishlist_product_view_head_components" remove="true"/>
+    </body>
+</page>
+
