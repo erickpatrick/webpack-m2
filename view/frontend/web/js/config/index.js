@@ -22,6 +22,10 @@ const entries = dirs(LOCALIZED_STATIC_DEPLOYED_FOLDER)
     if (fse.existsSync(`${LOCALIZED_STATIC_DEPLOYED_FOLDER}${dir}/js/test`)) {
       fse.copySync(`${LOCALIZED_STATIC_DEPLOYED_FOLDER}${dir}/js/test/unit/specs`, `./test/unit/specs/${dir}`)
     }
+    
+    if (fse.existsSync(`${LOCALIZED_STATIC_DEPLOYED_FOLDER}${dir}/js/static`)) {
+      fse.copySync(`./../../${LOCALIZED_STATIC_DEPLOYED_FOLDER}${dir}/js/static`, `./static`)
+    }
 
     return `./src/${dir}/main.js`
   })
