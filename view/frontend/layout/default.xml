@@ -10,6 +10,12 @@
         <remove src="mage/requirejs/mixins.js" />
     </head>
     <body>
+        <container name="after.body.start" as="after.body.start" before="-" label="Page Top">
+              <block class="Magento\Framework\View\Element\Template"
+                     name="nintendo.localization.data"
+                     template="Webpack_Magento2::webpack.phtml" />
+        </container>  
+          
         <attribute name="class" value="rd8"/>
 
         <referenceBlock name="absolute_footer" remove="true"/>
