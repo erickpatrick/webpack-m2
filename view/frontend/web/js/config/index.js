@@ -30,6 +30,8 @@ const entries = dirs(LOCALIZED_STATIC_DEPLOYED_FOLDER)
     return `./src/${dir}/main.js`
   })
 
+entries.unshift(`./src/${WEBPACK_MAGENTO_NAMESPACE}/entry-point.js`)
+
 module.exports = {
   entries: entries,
   dev: {
@@ -77,8 +79,8 @@ module.exports = {
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsSubDirectory: '',
+    assetsPublicPath: '',
     xmlPath: path.resolve(__dirname, RELATIVE_XML_PATH),
 
     /**
