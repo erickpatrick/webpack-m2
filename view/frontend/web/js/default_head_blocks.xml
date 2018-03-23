@@ -1,11 +1,11 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
         <% for (var css in htmlWebpackPlugin.files.css) { %>
-        <css src="ErickPatrick_Webpack::js/dist<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet"></css>
+        <css src="ErickPatrick_Webpack::js/dist/<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet"></css>
         <% } %>
 
         <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
-        <script src="ErickPatrick_Webpack::js/dist<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"  defer="defer"></script>
+        <script src="ErickPatrick_Webpack::js/dist/<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"  defer="defer"></script>
         <% } %>
     </head>
 </page>
