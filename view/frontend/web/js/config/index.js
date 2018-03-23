@@ -30,7 +30,7 @@ const entries = dirs(LOCALIZED_STATIC_DEPLOYED_FOLDER)
     return `./src/${dir}/main.js`
   })
 
-entries.unshift(`./src/${WEBPACK_MAGENTO_NAMESPACE}/entry-point.js`)
+entries.unshift(`./entry-point.js`)
 
 module.exports = {
   entries: entries,
