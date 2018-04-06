@@ -12,7 +12,7 @@
     <body>
         <container name="after.body.start" as="after.body.start" before="-" label="Page Top">
               <block class="Magento\Framework\View\Element\Template"
-                     name="nintendo.localization.data"
+                     name="webpackm2.baseurl"
                      template="Webpack_Magento2::webpack.phtml" />
         </container>  
           
