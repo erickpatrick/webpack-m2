@@ -1,4 +1,7 @@
-# Webpack Magento 2
+# This package has been deprecated
+As with version 2.3 of Magento we'll have an API centric way of development, this package is not going to be updated (as it was not being updated anyways)
+
+## Webpack Magento 2
 Magento 2 module integrating Webpack into the frontend workflow
 
 ## Motivation
